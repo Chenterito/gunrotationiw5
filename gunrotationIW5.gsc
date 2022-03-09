@@ -212,6 +212,7 @@ destroyAll()
 
 init_Weapons()
 {
+	level.Weapons= [];
 	level.Weapons[level.Weapons.size]="iw5_acr_mp_camo01";
 	level.Weapons[level.Weapons.size]="iw5_acr_mp_reflex_camo02";
 	level.Weapons[level.Weapons.size]="iw5_acr_mp_silencer_camo03";
