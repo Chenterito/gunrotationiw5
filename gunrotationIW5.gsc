@@ -13,9 +13,7 @@
 #include maps\mp\gametypes\_hud_util;
 
 init()
-{
-	level.servername = GetDvar("sv_hostname");
-	
+{	
 	if (GetDvar("g_gametype") == "infect")
 	{        				
 		level.dev_mode=0;        		
