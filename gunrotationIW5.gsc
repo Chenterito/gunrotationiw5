@@ -75,45 +75,45 @@ rotateGuns()
 				    if ( player.team == "allies" )
 				    	{				    
 				        	if (isDefined(player.hadgunsrotated) && player.hadgunsrotated == 0)
-									{										
-										player TakeWeapon(player.primaryWeapon);
-										player TakeWeapon(player.secondaryWeapon);
-										player SetPerk("specialty_fastreload", true, false);
-										player SetPerk("specialty_quickswap", true, false);
-									}
-									else
-									{
-										player TakeWeapon(level.GlobalCurrentGun);
-										player TakeWeapon(level.Secondary);
-										if (player.primaryWeapon == "iw5_usp45jugg_mp" && player.primaryWeapon == "iw5_riotshieldjugg_mp")
-										{
-											player TakeWeapon("iw5_usp45jugg_mp");
-											player TakeWeapon("iw5_riotshieldjugg_mp");
-											player SetPerk("specialty_fastreload", true, false);
-											player SetPerk("specialty_quickswap", true, false);
-										}
-										if (player.primaryWeapon ==  "iw5_m60jugg_mp" && player.primaryWeapon == "iw5_mp412jugg_mp")
-										{
-											player TakeWeapon("iw5_m60jugg_mp");
-											player TakeWeapon("iw5_mp412jugg_mp");
-											player SetPerk("specialty_fastreload", true, false);
-											player SetPerk("specialty_quickswap", true, false);
-										}
-										if (player.primaryWeapon == "iw5_g36c_mp_m320_reflex" && player.primaryWeapon == "iw5_pp90m1_mp")
-										{
-											player TakeWeapon("iw5_g36c_mp_m320_reflex");
-											player TakeWeapon("iw5_pp90m1_mp");
-											player SetPerk("specialty_fastreload", true, false);
-											player SetPerk("specialty_quickswap", true, false);
-										}
-									}
-									player giveWeapon(level.PrimaryFullName);
-									player giveWeapon(level.Secondary);
-									player giveStartAmmo(level.PrimaryFullName);								
-									player giveStartAmmo(level.Secondary);	
-									
-									player SwitchToWeaponImmediate(level.PrimaryFullName);
-									player.hadgunsrotated = 1;
+						{										
+							player TakeWeapon(player.primaryWeapon);
+							player TakeWeapon(player.secondaryWeapon);
+							player SetPerk("specialty_fastreload", true, false);
+							player SetPerk("specialty_quickswap", true, false);
+						}
+						else
+						{
+							player TakeWeapon(level.GlobalCurrentGun);
+							player TakeWeapon(level.Secondary);
+							if (player.primaryWeapon == "iw5_usp45jugg_mp" && player.primaryWeapon == "iw5_riotshieldjugg_mp")
+							{
+								player TakeWeapon("iw5_usp45jugg_mp");
+								player TakeWeapon("iw5_riotshieldjugg_mp");
+								player SetPerk("specialty_fastreload", true, false);
+								player SetPerk("specialty_quickswap", true, false);
+							}
+							if (player.primaryWeapon ==  "iw5_m60jugg_mp" && player.primaryWeapon == "iw5_mp412jugg_mp")
+							{
+								player TakeWeapon("iw5_m60jugg_mp");
+								player TakeWeapon("iw5_mp412jugg_mp");
+								player SetPerk("specialty_fastreload", true, false);
+								player SetPerk("specialty_quickswap", true, false);
+							}
+							if (player.primaryWeapon == "iw5_g36c_mp_m320_reflex" && player.primaryWeapon == "iw5_pp90m1_mp")
+							{
+								player TakeWeapon("iw5_g36c_mp_m320_reflex");
+								player TakeWeapon("iw5_pp90m1_mp");
+								player SetPerk("specialty_fastreload", true, false);
+								player SetPerk("specialty_quickswap", true, false);
+							}
+						}
+							player giveWeapon(level.PrimaryFullName);
+							player giveWeapon(level.Secondary);
+							player giveStartAmmo(level.PrimaryFullName);								
+							player giveStartAmmo(level.Secondary);	
+
+							player SwitchToWeaponImmediate(level.PrimaryFullName);
+							player.hadgunsrotated = 1;
 						}
 			    }
 			  
