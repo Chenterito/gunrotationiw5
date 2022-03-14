@@ -573,7 +573,7 @@ init_GunNames()
 	level.GunNames2[level.GunNames2.size]="FAD"; 
 	level.GunNames[level.GunNames.size]="cm901";
 	level.GunNames2[level.GunNames2.size]="CM 901"; 
-	level.GunNames[level.GunNames.size0]="mp5";
+	level.GunNames[level.GunNames.size]="mp5";
 	level.GunNames2[level.GunNames2.size]="MP5"; 
 	level.GunNames[level.GunNames.size]="p90";
 	level.GunNames2[level.GunNames2.size]="P90"; 
