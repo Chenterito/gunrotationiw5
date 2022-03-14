@@ -127,8 +127,7 @@ rotateGuns()
 				
 			}			
 				level.GunNameHUD SetPoint("TOP", "TOP", 250, 10);				
-				level.GunNameHUD SetText(GetGunName(level.PrimaryFullName));				
-			}			 
+				level.GunNameHUD SetText(GetGunName(level.PrimaryFullName));							 
 		}
 		level.SecondsNumber SetText(level.ChangeInterval - passedTime);
 		wait 1;
