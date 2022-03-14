@@ -15,8 +15,7 @@
 init()
 {	
 	if (GetDvar("g_gametype") == "infect")
-	{        				
-		level.dev_mode=0;        		
+	{        					  		
 		level.ChangeInterval = 30;
 		level.Secondary = "iw5_p99_mp_akimbo";
 		level.NextPrimary ="";
@@ -126,17 +125,9 @@ rotateGuns()
 				if(GetGunName(level.GlobalCurrentGun) != GetGunName(level.PrimaryFullName) && level.PrimaryFullName != level.Secondary)
 				break;
 				
-			}
-			if(level.dev_mode==1)
-			{	
-				level.GunNameHUD SetPoint("TOP", "TOP", 300, 10);				
-				level.GunNameHUD SetText(level.PrimaryFullName);
-				
-			}else{	
-			
+			}			
 				level.GunNameHUD SetPoint("TOP", "TOP", 250, 10);				
-				level.GunNameHUD SetText(GetGunName(level.PrimaryFullName));
-				
+				level.GunNameHUD SetText(GetGunName(level.PrimaryFullName));				
 			}			 
 		}
 		level.SecondsNumber SetText(level.ChangeInterval - passedTime);
