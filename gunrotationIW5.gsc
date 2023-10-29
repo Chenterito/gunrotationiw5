@@ -657,6 +657,6 @@ init_GunNames()
 	level.GunNames2[level.GunNames2.size]="Fingergun";
 	level.GunNames[level.GunNames.size]="ac130_25mm_mp";
 	level.GunNames2[level.GunNames2.size]="AC130";
-	level.GunNames[level.GunNames.size]="riotshield_mp";
+	level.GunNames[level.GunNames.size]="riotshield";
 	level.GunNames2[level.GunNames2.size]="Riotshield";
 }
